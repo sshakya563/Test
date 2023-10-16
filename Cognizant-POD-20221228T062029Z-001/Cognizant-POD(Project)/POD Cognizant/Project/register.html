@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="style/registration_css.css">
+
+    <!-- BEGIN INCLUDE HEADER AND FOOTER -->
+<script src="js/jquery-1.10.2.js"></script>
+
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+
+    </script>
+
+    <!-- END INCLUDE HEADER AND FOOTER -->
+
+
+
+</head>
+
+<body style="background-color: white;overflow: hidden">
+    <div id="header"></div>
+
+    <!----------- Background Image -------------->
+         
+
+    <div class="helpline" style="width:15%">
+        <div id="icon" style="position: absolute; margin-left: 0vw; border: 1px black solid; border-radius: 18px; height:25.1vw;width:9.95vw;margin-top:80px;background-color: rgb(0,51,153);color: white;">
+            <img src="Images/telephone.png" style="height:4.28vh;width:2.42vw;z-index: 1"><span style="position: absolute; margin-top: 8px;">HELPLINE </span>
+            <br><br>
+            <p>Report A Crime: <br> 100</p>
+            <p>Women Helpline: <br> 1091</p>
+            <p>Child Helpline: <br> 1098</p>
+            <p>Anti Ragging: <br> 1800-180-5522</p>
+            <p>Ambulance: <br>108</p>
+            <p>Railway Protection: <br> 1322</p>
+        </div>
+    </div>
+    
+<h1 style="position: relative; top: 26px;left:40px;">Welcome to User Resgistration Page!</h1>
+    <form style="position: relative; top: 40px;left:500px;">
+        <table>
+	 <tr>
+        <td><label for="username">Enter Full Name:</label></td>
+        <td><input type="text" name="fullname" placeholder="Enter Full Name " required></td>
+            </tr>  
+            <tr>
+        <td><label for="username">Enter Email Id:</label></td>
+        <td><input type="email" name="emailid" placeholder="Enter Mail Id" required></td>
+            </tr>
+	 <tr>
+        <td><label for="age">Enter Age:</label></td>
+        <td><input type="text" name="age" placeholder="Enter Age" required></td>
+            </tr>
+            <tr>
+        <td><label for="password">Enter Password:</label></td>
+        <td><input type="password" name="password" placeholder="Enter Password"  required></td>
+            </tr>
+            <tr>
+        <td><label for="username">Enter Mobile No:</label></td>
+        <td><input type="text" name="mobilenumber" placeholder="Enter Mobile Number" required></td>
+        <td><input type="submit" id="sendotp" value="Send OTP" id="generate otp"></td>
+            </tr>
+           <tr>
+        <td><label for="Id Card Number">Enter Id Number:</label></td>
+        <td><input type="text" name="Id Card Number" placeholder="Enter Id Card Number" required></td>
+            </tr>
+<tr>
+<td><label for="upload file">Upload File:</label></td>
+<td>
+  <input type="file" id="file" name="filename">
+     <span id='val'></span>
+ <span id='button'>Select File</span>
+</td>
+
+ 
+
+</tr>
+            <td align="center" colspan="2"><button type="submit" id="verify">Verify</button></td>
+        
+             </table>
+    </form>
+    
+      <script>
+    $('#button').click(function () {
+    $("input[type='file']").trigger('click');
+})
+        
+        $("input[type='file']").change(function () {
+    $('#val').text(this.value.replace(/C:\\fakepath\\/i, ''))
+})
+    </script>         
+            
+  
+        
+        
+        <a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf" target="_blank">
+            <img src="Images/telephone.png" style="width: inherit;height: 40px;padding-left: 0px;position: absolute; margin-left:  96.5vw;margin-top:14px;z-index: 1;border-radius: 25px; " />
+            <div id="covid-helpline" style=" padding-top: 3vw; position: absolute; margin-left:  96.5vw; border: 1px black solid;border-radius: 12px; height:17.3vw;width:1.68vw;margin-top:16px;background-color: rgb(0,51,153);color: white;padding-left: 10px;">
+
+                <span>
+                    C<br>O<br>V<br>I<br>D<br><br>H<br>E<br>L<br>P<br>L<br>I<br>N<br>E<br>
+                </span>
+
+            </div>
+
+        </a>
+    
+
+    <!-------- Footer Begins ------->
+    <div id="footer"></div>
+    <!-------- Footer Ends ------->
+
+</body>

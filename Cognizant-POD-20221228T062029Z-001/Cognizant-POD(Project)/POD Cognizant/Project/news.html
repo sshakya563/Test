@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS Begin-->
+    <style>
+        #nav a {
+            float: left;
+            background-color: inherit;
+            text-align: center;
+            padding-top: 1.33vh;
+            padding-bottom: 1.33vh;
+            text-decoration: none;
+            font-size: 2.12vh;
+            color: white;
+        }
+
+        #nav a:hover {
+            background-color: rgb(0, 40, 230);
+
+        }
+
+        #nav a.active {
+            background-color: rgb(0, 0, 200);
+
+        }
+
+
+
+        .dropbtn {
+            background-color: rgb(0, 51, 153);
+            color: white;
+            padding-top: 1.33vh;
+            padding-bottom: 1.33vh;
+             text-align: center;
+            font-size: 2.12vh;
+            border: none;
+        }
+
+        .dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(0, 51, 153);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: rgb(0, 51, 153);
+            padding: 0px 0.5px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgb(0, 40, 230);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: rgb(0, 40, 230);
+        }
+
+    </style>
+</head>
+
+
+<!-------------------------------- Header --------------------------------------->
+<header>
+    <div id="header" style="height: 11.94vh; background-color: rgb(249,249,249);text-align:center;top:50%;">
+
+        <div id="logo" style="position: absolute; margin-left: 1.95vw; border: 1px black solid; height:9.28vh;width:10.42vw;margin-top: 1.33vh;margin-bottom: 1.33vh;background-color: white;">LOGO
+            <!--text to be removed -->
+
+            <!-- Logo Image to be added --  <img src="" style="height:9.28vh;width:10.42vw">  -->
+
+        </div>
+
+        <span style="position: absolute; color: rgb(237,28,36);font-weight:bold;font-size:4.23vw;left: 21.48vw;top:1.86vh;">ONLINE CRIME MANAGEMENT</span>
+
+    </div>
+
+
+    <!-------------------------------- Navigation Bar --------------------------------------->
+    <div style="background-color: rgb(0,51,153);height:5.31vh;" id="nav">
+        <a class="active" href="homepage.html" style="width: 12.5vw;">HOME</a>
+        <a href="news.html" style="width: 12.5vw;">NEWS</a>
+        <a href="#most wanted.html" style="width: 15.43vw;">MOST WANTED</a>
+        <a href="missing persons.html" style="width: 15.43vw;">MISSING PERSONS</a>
+        <a href="unidentified bodies.html" style="width: 17.38vw;">UNIDENTIFIED BODIES</a>
+        <a href="crime types.html" style="width: 12.83vw;">CRIME TYPES</a>
+
+        <div class="dropdown" style="width: 12.83vw;">
+            <button class="dropbtn" style="width: 12.83vw;">LOGIN</button>
+            <div class="dropdown-content">
+                <a href="user login.html" style="width: 12.83vw;">Public Login</a><br>
+                <a href="police login.html" style="width: 12.83vw;">Police Login</a>
+            </div>
+        </div>
+
+
+    </div>
+</header>
+<body>
+<div style="position: absolute; margin-left: 10vw;  height:1.95vw;width:25vw;margin-top:2.5vw; font-size: 2vw">News...</div> 
+    <div style="position: absolute; margin-left: 10vw;  height:12.5vw;width:70vw;margin-top:7vw; font-size: 2vw;border: 1px black solid;">
+    <div style="position: absolute; margin-left: 1.5vw;  height:9vw;width:8vw;margin-top:1.5vw; font-size: 2vw;border: 1px black solid;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6h-AexBLDBkqme1-nBATjz1CWbKPh3hhufHEQND6s3PSlqka6&s" width="123vw" height="138vw"  ></div>
+     <a style="padding-left: 13vw; font-size:1.5vw; font-weight: bold">Is India counting every COVID case? What about deaths?<br></a>
+          <a style="font-size: 1.4vw; padding-left: 13vw;float: left">India is not counting every coronavirus case but no nation can.Around the world, official tallies generally report only confirmed cases, not actual infections. Cases are missed because testing is so haphazard and because some people infected by the coronavirus experience mild or even no symptoms.<br></a>  <a style=" font-size: 1.5vw;padding-left: 62vw" href="#" class="item">Read more</a>   
+        
+    </div> 
+    <div style="position: absolute; margin-left: 10vw;  height:12.5vw;width:70vw;margin-top:22vw; font-size: 2vw;border: 1px black solid;"><div style="position: absolute; margin-left: 1.5vw;  height:9vw;width:8vw;margin-top:1.5vw; font-size: 2vw;border: 1px black solid;">        
+        <img src="https://th.thgim.com/sport/cricket/t92upl/article34470655.ece/ALTERNATES/FREE_660/IPL-2021-M15---KKR-v-CSK" width="123vw" height="138vw"  ></div> 
+    <a style="padding-left: 13vw; font-size:1.5vw; font-weight: bold">IPL 2021: KKR-RCB match rescheduled after two players test positive for COVID-19</a>
+        <a style="font-size: 1.4vw; margin-left:13vw;float: left">The Indian Premier League (IPL) game between Royal Challengers Bangalore and Kolkata Knight Riders in Ahmedabad has been rescheduled from May 3 night with at least two KKR players — Varun Chakravarthy and Sandeep Warrier — having returned COVID-19 positive test results ahead of the game.<br></a>
+        <a style=" font-size: 1.5vw; padding-left: 62vw" href="#" class="item">Read more</a>
+    </div> 
+</body>
+<!-------------------------------- Footer --------------------------------------->
+<footer style="background-color: rgb(0,51,153); height: 4.38vh;position: absolute;top:94.16vh; width: 99%;padding-top: 1.33vh;">
+    <p style="color:rgb(249,249,249);font-size:2.12vh; padding-left: 11.72vw;display: inline;"><i>Disclaimer </i></p>
+    <p style="color:rgb(249,249,249);font-size:2.12vh; padding-left: 18vw;display: inline;"><i>Privacy Policy </i></p>
+    <p style="color:rgb(249,249,249);font-size:2.12vh; padding-left: 18vw;display: inline;"><i>Terms of use</i></p>
+    <p style="color:rgb(249,249,249);font-size:2.12vh; padding-left:18vw; display:inline;"><i>Important Sites</i></p>
+
+</footer>
+
+    

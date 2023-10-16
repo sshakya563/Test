@@ -1,0 +1,55 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+<html>
+<body>
+    
+    <h1>Welcome to User Registration Page!</h1>
+    <form name="frmContact" method="post" action="connection.php">
+        <table align="center">
+	 <tr>
+        <td><label for="username">Enter the Full Name:</label></td>
+        <td><input type="text" name="fullname" placeholder="Enter the full name" required ></td>
+            </tr>
+            <tr>
+        <td><label for="username">Enter the Email Id:</label></td>
+        <td><input type="email" name="emailid" placeholder="Enter the mail id" required></td>
+            </tr>
+	 <tr>
+        <td><label for="age">Enter the Age:</label></td>
+        <td><input type="text" name="age" placeholder="Enter the age" required></td>
+            </tr>
+            <tr>
+        <td><label for="username">Enter the Password:</label></td>
+        <td><input type="email" name="password"  require></td>
+            </tr>
+            <tr>
+        <td><label for="username">Enter the Mobile No:</label></td>
+        <td><input type="" name="mobilenumber" placeholder="Enter the Mobile Number" required></td>
+        <td><input type="submit" id="sendotp" value="Send OTP" id="generate otp"></td>
+            </tr>
+           <tr>
+        <td><label for="username">Enter the Id Card Number:</label></td>
+        <td><input type="" name="IdCardNo" placeholder="Enter the  id card number" required></td>
+            </tr>
+<tr>
+<td><label for="upload file">Upload File:</label></td>
+<td><form action="/action_page.php">
+    <input type="file" id="myFile" name="filename">
+  </form></td>
+</tr>
+
+
+            <tr>
+            <td colspan="2"><button type="submit">Verify</button></td></td>
+            </tr>
+    </table>
+    </form>
+    
+</body>
+
+
+</html>

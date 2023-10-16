@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Login</title>
+    <link rel="stylesheet" href="style/login_css.css">
+
+    <!-- BEGIN INCLUDE HEADER AND FOOTER -->
+    <script src="js/jquery-1.10.2.js"></script>
+
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+
+    </script>
+
+    <!-- END INCLUDE HEADER AND FOOTER -->
+
+
+
+</head>
+
+
+
+
+<body style="background-color: white;overflow: hidden;">
+    <div id="header"></div>
+
+    <!----------- Background Image 
+        <img src="https://wallpapercave.com/wp/wp2919299.jpg" style="position: absolute; top:139px;width: 99%;height: 80%;"> -------------->
+
+    <!--------------------------------------------- LEFT SIDEBAR BEGINS ----------------------------------------------------------------------->
+
+
+
+    <div class="helpline" style="width:15%">
+        <div id="icon" style="position: absolute; margin-left: 0vw; border: 1px black solid; border-radius: 18px; height:25.1vw;width:9.95vw;margin-top:80px;background-color: rgb(0,51,153);color: white;">
+            <img src="Images/telephone.png" style="height:4.28vh;width:2.42vw;z-index: 1"><span style="position: absolute; margin-top: 8px;">HELPLINE </span>
+            <br><br>
+            <p>Report A Crime: <br> 100</p>
+            <p>Women Helpline: <br> 1091</p>
+            <p>Child Helpline: <br> 1098</p>
+            <p>Anti Ragging: <br> 1800-180-5522</p>
+            <p>Ambulance: <br>108</p>
+            <p>Railway Protection: <br> 1322</p>
+
+
+
+        </div>
+    </div>
+
+    <!--------------------------------------------- LEFT SIDEBAR ENDS ------------------------------------------------------------------------->
+
+    <!--------------------------------------------- USER LOGIN BEGIN ------------------------------------------------------------------------->
+
+    <h1>Welcome to User Login Page!</h1>
+    <form>
+        <table align="center">
+            <tr>
+                <td><label for="username">Enter Email Id:</label></td>
+                <td><input type="email" name="emailid" placeholder="Enter mail id" required></td>
+            </tr>
+            <tr>
+                <td><label for="username">Enter Password:</label></td>
+                <td><input type="password" name="password" placeholder="Enter Password" required></td>
+            </tr>
+            <tr>
+                <td><label for="username">Enter Mobile No:</label></td>
+                <td><input type="tel" pattern="[6-9]{1}[0-9]{9}" name="mobilenumber" placeholder="Enter Mobile Number" required /></td>
+                <td><input type="submit" id="sendotp" value="Send OTP" id="generate otp"></td>
+            </tr>
+            <tr>
+                <td><label for="username">Enter the OTP:</label></td>
+                <td>
+                    <form method="get" id="digit" class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+
+                        <input type="text" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}" id="digit" name="digit-1" data-next="digit-2" />
+                        <input type="text" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}" id="digit" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+                        <input type="text" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}" id="digit" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+                        <span class="splitter">&ndash;</span>
+                        <input type="text" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}" id="digit" name="digit-4" data-next="digit-5" data-previous="digit-3" />
+                        <input type="text" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}" id="digit" name="digit-5" data-next="digit-6" data-previous="digit-4" />
+                        <input type="text" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}" id="digit" name="digit-6" data-previous="digit-5" />
+
+                    </form>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center" colspan="2"><button type="submit" id="verify">Verify</button></td>
+            </tr>
+             <tr>
+                <td align="center" colspan="2"><a href="register.html" style="color: red;font-size: 16px;margin-left: 100px;padding-bottom: 30px;" target="_blank">Register Here</a></td>
+            </tr>
+        </table>
+    </form>
+
+
+
+    <!--------------------------------------------- USER LOGIN ENDS ------------------------------------------------------------------------>
+
+
+
+
+
+
+    <!--------------------------------------------- RIGHT SIDEBAR BEGINS ------------------------------------------------------------------------>
+
+
+
+
+    <a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf" target="_blank">
+        <img src="Images/telephone.png" style="width: inherit;height: 40px;padding-left: 0px;position: absolute; margin-left:  97.5vw;margin-top:-282px;z-index: 1;border-radius: 25px; " />
+        <div id="covid-helpline" style=" padding-top: 3vw; position: absolute; margin-left:  97.5vw; border: 1px black solid;border-radius: 12px; height:17.3vw;width:1.68vw;margin-top:-282px;background-color: rgb(0,51,153);color: white;padding-left: 10px;">
+
+            <span>
+                C<br>O<br>V<br>I<br>D<br><br>H<br>E<br>L<br>P<br>L<br>I<br>N<br>E<br>
+            </span>
+
+        </div>
+
+    </a>
+
+    <!--------------------------------------------- RIGHT SIDEBAR ENDS ------------------------------------------------------------------------>
+
+
+
+    <!-------- Footer Begins ------->
+    <div id="footer"></div>
+    <!-------- Footer Ends ------->
+
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+table{
+    position: absolute;
+    padding: 10px;
+    font-family:sans-serif;
+          text-align: center;
+    background-image: url(../Images/texture.jpeg);
+    /*background-color: ghostwhite;*/
+    width:580px;
+    height: auto;
+    background-size: contain;
+}
+
+
+input[type='file'] {
+    width:163px;
+    height:20px;
+    opacity:0;
+}
+#val {
+    width:163px;
+    height:20px;
+    font-size:13px;
+    line-height: 25px;
+    text-indent: 10px;
+    pointer-events: none;
+    background-color: white;
+    border: 1px solid black;
+    position: absolute;
+    margin-left: 36px;
+    
+}
+#button {
+    cursor: pointer;
+    display: block;
+    width: 90px;
+    background-color: #04AA6D;
+    height:21px;
+    color: white;
+    position: absolute;
+    margin-top:0px;
+    left:440px;
+    line-height:20px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid black;
+    
+}
+
+#button:hover {
+    opacity: 0.9;
+}
+
+
+  button:hover {
+    opacity: 0.9;
+  }
+ #sendotp{
+     
+     background-color: #04AA6D;
+     color: white;
+     cursor: pointer;
+    width: 90px;
+     height:25px;
+    color: white;
+     text-align: center;
+     font-size: 14px;
+     float: left;
+ }
+ #sendotp:hover {
+    opacity: 0.9;
+  }
+#verify{
+     background-color: #04AA6D;
+    font-size:20px;
+     color: white;
+    height:30px;
+    width:9vw;
+    border-radius: 12px;
+    position: relative;
+    margin-top: 20px;
+    left:62px;
+    margin-bottom: 20px;
+ }
+  h1{
+      text-align: center;
+      color: blue;
+  }
+  td{
+      column-gap:60px;
+      padding-top: 10px;
+  }
+input{
+    float: right;
+}
+label{
+    float:left;
+    font-weight: bold;
+}
+  

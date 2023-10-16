@@ -1,0 +1,13 @@
+<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+			apiKey : "AIzaSyCYZuTcSDjfqEASRxQnmv6GXlSfqLolSPw",
+			authDomain : "crime-management-f958a.firebaseapp.com",
+			projectId : "crime-management-f958a",
+			storageBucket : "crime-management-f958a.appspot.com",
+			messagingSenderId : "858998749681",
+			appId : "1:858998749681:web:a7925ab05e427f310f2c50"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+	</script>

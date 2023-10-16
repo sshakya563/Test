@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Most Wanted</title>
+
+    <!-- BEGIN INCLUDE HEADER AND FOOTER -->
+    <script src="js/jquery-1.10.2.js"></script>
+
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+
+    </script>
+
+    <!-- END INCLUDE HEADER AND FOOTER -->
+    
+    <!-- BEGIN INCLUDE SCRIPT FILE  -->
+    <script src="./js/most%20wanted.js"></script>
+    
+    
+        <style>
+                #close {
+    float: right;
+    display: inline-block;
+    margin-top: 8px;
+    margin-right: 10px;
+    height: 18px;
+    width: 18px;
+    padding: 3px;
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    background-color: white;
+                    line-height:0.5;
+}
+
+#close:hover {
+    text-decoration: underline;
+    transform: scale(1.02);
+}
+
+                </style>
+                <script>function hide() {
+    document.getElementById("popup1").style.display = "none";
+}
+    function fd_1(){
+       document.getElementById("popup1").style.display = "block"; 
+    }
+    </script>
+    
+    
+
+</head>
+
+
+
+
+<body style="background-color: rgb(249,249,249)">
+    <div id="header"></div>
+
+    <!----------- Background Image 
+        <img src="https://wallpapercave.com/wp/wp2919299.jpg" style="position: absolute; top:139px;width: 99%;height: 80%;"> -------------->
+
+
+    <div class="helpline" style="width:15%">
+        <div id="icon" style="position: absolute; margin-left: 0vw; border: 1px black solid; border-radius: 18px; height:25.1vw;width:9.95vw;margin-top:80px;background-color: rgb(0,51,153);color: white;">
+            <img src="Images/telephone.png" style="height:4.28vh;width:2.42vw;z-index: 1"><span style="position: absolute; margin-top: 8px;">HELPLINE </span>
+            <br><br>
+            <p style="padding-left: 10px">Report A Crime: <br> 100</p>
+            <p style="padding-left: 10px">Women Helpline: <br> 1091</p>
+            <p style="padding-left: 10px">Child Helpline: <br> 1098</p>
+            <p style="padding-left: 10px">Anti Ragging: <br> 1800-180-5522</p>
+            <p style="padding-left: 10px">Ambulance: <br>108</p>
+            <p style="padding-left: 10px">Railway Protection: <br> 1322</p>
+
+
+
+        </div>
+
+    </div>
+
+
+
+    <!------------------------- Most Wanted Slide Show --------------------------------->
+    
+    
+    <div class="slideshow" style="position: absolute;margin-left: 29.22vw;margin-top:4.95vw;border-radius: 12px;height:23.73vw;width: 48.36vw;border: 2px black solid;z-index: 11; ">
+
+        <div class="Slides" id="one" >
+            <div class="numbertext" style="position: absolute;font-size:26px;top:385px;left:375px;">1</div>
+            <img src="Images/mw_1.PNG" style="position: absolute;top:74px;left:40px;">
+            <div class="text" style="position: absolute; left:78px;top:58px;font-size: 20px;">
+                <pre>
+                Name: Alexis Flores         Age: 42 yrs
+                
+                Gender: Male                Height: 6'5"
+                
+                State: Maharashtra
+                
+                Description:<span style="text-align: justify;font-size:18px;">
+                  Flores is wanted for the kidnapping, rape and 
+                  murder of ten-year-old Iriana DeJesus in 2018. 
+                </span>
+                </pre>
+            </div>
+            <a onclick="fd_1();" style="position: absolute; left:660px;top:330px;color: red;text-decoration: underline;cursor: pointer;">Full Details</a>
+        </div>
+        
+        <div class="Slides" style="display: none;" id="two">
+           <div class="numbertext" style="position: absolute;font-size:26px;top:385px;left:375px;">2</div>
+            <img src="Images/mw_2.PNG" style="position: absolute;top:74px;left:40px;">
+            <div class="text" style="position: absolute; left:78px;top:52px;font-size: 20px;">
+                <pre>
+                Name: Ayush Khosh         Age: 46 yrs
+                
+                Gender: Male                Height: 6'1"
+                
+                State: Uttar Pradesh
+                
+                Description:<span style="text-align: justify;font-size:18px;">
+                  Ayush is wanted in connection with the 2016 
+                  murder of a 23-year-old woman, Natasha Bella, 
+                  whom he had previously dated. 
+                </span>
+                </pre>
+            </div>
+            <a href="full_details_2.html" style="position: absolute; left:660px;top:330px;color: red;">Full Details</a>
+        </div>
+    
+        <div class="Slides" style="display: none;">
+       <div class="numbertext" style="position: absolute;font-size:26px;top:385px;left:375px;" id="three">3</div>
+            <img src="Images/mw_3.PNG" style="position: absolute;top:74px;left:40px;">
+            <div class="text" style="position: absolute; left:78px;top:53px;font-size: 20px;">
+                <pre>
+                Name: Jimit P.         Age: 42 yrs
+                
+                Gender: Male                Height: 5'5"
+                
+                State: Goa
+                
+                Description:<span style="text-align: justify;font-size:18px;">
+                  Jimit is wanted for the murder of his wife on 
+                  May 12, 2012. Jimit allegedly stabbed his wife 
+                  to death just hours after their wedding.
+                </span>
+                </pre>
+            </div>
+            <a href="full_details_3.html" style="position: absolute; left:660px;top:330px;color: red;text-decoration: underline;">Full Details</a>
+        </div>
+
+     
+
+        <a class="dot prev" onclick="plusSlides(-1)" style="position: absolute;left: 225px;top:380px;font-weight: bold;font-size: 28px;cursor: pointer;">&#10094;</a>
+        <a class="dot next" onclick="plusSlides(1)" style="position: absolute;left: 515px;top:380px;font-weight: bold;font-size: 28px;cursor: pointer;">&#10095;</a>
+
+    </div>
+
+
+
+
+
+
+
+
+    <a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf" target="_blank">
+        <img src="Images/telephone.png" style="width: inherit;height: 40px;padding-left: 0px;position: absolute; margin-left:  96.5vw;margin-top:100px;z-index: 1;border-radius: 25px; " />
+        <div id="covid-helpline" style=" padding-top: 3vw; position: absolute; margin-left:  96.5vw; border: 1px black solid;border-radius: 12px; height:17.3vw;width:1.68vw;margin-top:100px;background-color: rgb(0,51,153);color: white;padding-left: 10px;">
+
+            <span>
+                C<br>O<br>V<br>I<br>D<br><br>H<br>E<br>L<br>P<br>L<br>I<br>N<br>E<br>
+            </span>
+
+        </div>
+
+    </a>
+
+    
+    
+    
+    
+    <div id="popup1" style="display: none;word-break: keep-all;max-width: 820px;position: absolute;margin-left: 29.22vw;margin-top:4.95vw;z-index: 1;">
+        <span id='close' onclick="hide()" style="cursor:default;display: block";>x</span>
+            <div id="content-head" style="padding-left: 30px;background-color: rgb(0,51,153);font-size: 22px; color:white;line-height: 40px;">MOST WANTED CRIMINAL</div>
+            <div id="content" style="max-height: 404px;border: 1px solid black;z-index: 1">    
+                <img id="photo" src="Images/mw_1.PNG" style="width: 190px;height: 230px; padding: 40px;">
+                <span id = "details" style="position: relative; top: -260px;left:100px;font-size: 18px; "><pre>
+                First Name:        
+                Last Name:
+                Age:
+                Gender
+                Height
+                FIR No.
+                ACCUSSED ID
+                IDENTIFICATION MARKS:
+                
+                </pre>
+                <span style="color:blue;position: relative;left: -56px;">DESCRIPTION:<br>
+                  <span style="color: black"> Flores is wanted for the kidnapping, rape and 
+                  murder of ten-year-old Iriana DeJesus in 2018.</span> </span> 
+                </span>
+                
+        </div>
+              </div>    
+    
+        
+                
+            
+            
+                
+            
+    
+
+    <!-------- Footer Begins ------->
+    <div id="footer"></div>
+    <!-------- Footer Ends ------->
+  
+
+</body>
+</html>    
+    
+    
+    
+    
+    
+    
+    
+    

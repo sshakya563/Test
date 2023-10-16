@@ -1,0 +1,38 @@
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 9px 18px;
+    border: none;
+    cursor: pointer;
+    height: fit-content;
+    width: fit-content;
+    font-size: medium;
+  }
+  button:hover {
+    opacity: 0.9;
+  }
+ 
+  h2{
+      text-align: center;
+      color: blue;
+      padding-top: 0px;
+      padding-bottom: 0px;
+  }
+  td{
+      column-gap:18px;
+      padding: 5.4px;
+      width:135px;
+  }
+  table{
+      text-align: left;
+      background-image:url(../Images/texture.jpeg);
+      padding: 9px 22.5px px;
+      margin-top: -14.4px;
+      
+  }
+
+#submit{
+     background-color: #04AA6D;
+     color: white;
+    
+ }

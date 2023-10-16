@@ -1,0 +1,60 @@
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    height: fit-content;
+    width: fit-content;
+    font-size: medium;
+  }
+  button:hover {
+    opacity: 0.9;
+  }
+ 
+  h1{
+      text-align: center;
+      color: blue;
+      padding-top: 30px;
+      padding-bottom: 10px;
+  }
+  td{
+      column-gap:20px;
+      padding: 6px;
+      width:150px;
+  }
+  table{
+      text-align: left;
+      background-image:url(../Images/texture.jpeg);
+      padding: 2px 20px 0px;
+      
+  }
+#verify {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    height: 30px;
+    width: 9vw;
+    font-size: 20px;
+    line-height: 1px;
+    border: none;
+    cursor: pointer;
+    margin-left: 100px;
+}
+
+#verify:hover {
+    opacity: 0.9;
+}
+
+#sendotp {
+    background-color: #04AA6D;
+    color: white;
+}
+
+#button:hover {
+    opacity: 0.9;
+}
+
+#sendotp:hover {
+    opacity: 0.9;
+}

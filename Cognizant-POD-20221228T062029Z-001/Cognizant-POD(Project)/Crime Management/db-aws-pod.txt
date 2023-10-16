@@ -1,0 +1,12 @@
+connection name:--(any name)
+
+Hostname---crimemanagement.c2l0wiqdrnnv.ap-south-1.rds.amazonaws.com
+
+port-3306
+
+User-root
+
+Password-12345678
+
+
+IAM--https://242653533489.signin.aws.amazon.com/console

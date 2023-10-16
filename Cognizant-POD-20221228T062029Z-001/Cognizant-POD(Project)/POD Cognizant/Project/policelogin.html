@@ -1,0 +1,92 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style/policelogin.css.css">
+    
+  
+   <!-- BEGIN INCLUDE HEADER AND FOOTER -->
+    <script src="js/jquery-1.10.2.js"></script>
+
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+
+    </script>
+
+    <!-- END INCLUDE HEADER AND FOOTER -->
+
+    </head>
+<body style="overflow: hidden; background-color: white;">
+    <div id="header"></div>
+    
+    <!--------------- LEFT SIDEBAR BEGINS ---------------->
+    
+    <div class="helpline" style="width:15%">
+        <div id="icon" style="position: absolute; margin-left: 0vw; border: 1px black solid; border-radius: 18px; height:25.1vw;width:9.95vw;margin-top:80px;background-color: rgb(0,51,153);color: white;">
+            <img src="Images/telephone.png" style="height:4.28vh;width:2.42vw;z-index: 1"><span style="position: absolute; margin-top: 8px;">HELPLINE </span>
+            <br><br>
+            <p>Report A Crime: <br> 100</p>
+            <p>Women Helpline: <br> 1091</p>
+            <p>Child Helpline: <br> 1098</p>
+            <p>Anti Ragging: <br> 1800-180-5522</p>
+            <p>Ambulance: <br>108</p>
+            <p>Railway Protection: <br> 1322</p>
+
+
+
+        </div>
+         </div>
+    
+    <!--------------- LEFT SIDEBAR ENDS ---------------->
+    
+    
+    <!--------------- RIGHT SIDEBAR BEGINS ---------------->
+    <a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf" target="_blank">
+            <img src="Images/telephone.png" style="width: inherit;height: 40px;padding-left: 0px;position: absolute; margin-left:  96.5vw;margin-top:100px;z-index: 1;border-radius: 25px; " />
+            <div id="covid-helpline" style=" padding-top: 3vw; position: absolute; margin-left:  96.5vw; border: 1px black solid;border-radius: 12px; height:17.3vw;width:1.68vw;margin-top:100px;background-color: rgb(0,51,153);color: white;padding-left: 10px;">
+
+                <span>
+                    C<br>O<br>V<br>I<br>D<br><br>H<br>E<br>L<br>P<br>L<br>I<br>N<br>E<br>
+                </span>
+
+            </div>
+
+        </a>
+     
+    
+    <!--------------- RIGHT SIDEBAR ENDS ---------------->
+    
+    <h1>Welcome to Police Login Page!</h1>
+    <br>
+    <form>
+        <table align="center">
+            <tr>
+                 <td><label for="username" style="font-size: medium;">Enter the Id:</label></td>
+                <td><input type="id" name="userId" placeholder="Enter Login Id"  required></td>
+            </tr>
+            <tr>
+                <td><label for="password" style="font-size: medium;">Enter the Password:</label></td>
+                <td><input type="password" name="password" placeholder="Enter Password"  required></td>
+            </tr>
+            
+            <tr>
+                <td align="center" colspan="2"><button class="g-recaptcha" 
+                    data-sitekey="reCAPTCHA_site_key" 
+                    data-callback='onSubmit' 
+                    data-action='submit'>Verify</button></td>
+            </tr>
+    </table>
+    </form>
+    
+    <!-------- Footer Begins ------->
+    <div id="footer"></div>
+    <!-------- Footer Ends ------->
+
+</body>
+
+
+</html>

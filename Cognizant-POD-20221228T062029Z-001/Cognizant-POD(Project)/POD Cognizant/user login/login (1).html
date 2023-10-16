@@ -1,0 +1,52 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="otp.js"></script>
+  </head>
+<html>
+<body>
+    
+    <h1>Welcome to User Login Page!</h1>
+    <form>
+        <table align="center">
+            <tr>
+                 <td><label for="username">Enter the Email Id:</label></td>
+                <td><input type="email" name="emailid" placeholder="Enter the mail id" required></td>
+            </tr>
+            <tr>
+                <td><label for="username">Enter the Password:</label></td>
+                <td><input type="password" name="password"  required></td>
+            </tr>
+            <tr>
+                <td><label for="username">Enter the Mobile No:</label></td>
+                <td><input type="tel" pattern="[6-9]{1}[0-9]{9}"  name="mobilenumber" placeholder="Enter the Mobile Number" required/></td>
+                <td><input type="submit" id="sendotp" value="Send OTP" id="generate otp"></td>
+            </tr>
+            <tr>
+                <td><label for="username">Enter the OTP:</label></td>
+                <td><form method="get" id="digit" class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+                    
+                    <input  type="text" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}" id="digit" name="digit-1" data-next="digit-2" />
+                    <input  type="text" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}" id="digit" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+                    <input type="text" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}" id="digit" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+                    <span class="splitter">&ndash;</span>
+                    <input type="text" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}" id="digit" name="digit-4" data-next="digit-5" data-previous="digit-3" />
+                    <input type="text" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}" id="digit" name="digit-5" data-next="digit-6" data-previous="digit-4" />
+                    <input type="text" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}" id="digit" name="digit-6" data-previous="digit-5" />
+                      
+                </form>
+                </td>
+                </form></td>
+           </tr>
+            <tr>
+                <td align="center" colspan="2"><button type="submit">Verify</button></td>
+            </tr>
+    </table>
+    </form>
+    
+</body>
+
+
+</html>

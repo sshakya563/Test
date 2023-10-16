@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HomePage</title>
+
+    <!-- BEGIN INCLUDE HEADER AND FOOTER -->
+    <script src="js/jquery-1.10.2.js"></script>
+
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+
+    </script>
+
+    <!-- END INCLUDE HEADER AND FOOTER -->
+
+
+
+</head>
+
+
+
+
+<body style="background-color: white">
+    <div id="header"></div>
+
+    <!----------- Background Image 
+        <img src="https://wallpapercave.com/wp/wp2919299.jpg" style="position: absolute; top:139px;width: 99%;height: 80%;"> -------------->
+
+
+    <div class="helpline" style="width:15%">
+        <div id="icon" style="position: absolute; margin-left: 0vw; border: 1px black solid; border-radius: 18px; height:25.1vw;width:9.95vw;margin-top:80px;background-color: rgb(0,51,153);color: white;">
+            <img src="Images/telephone.png" style="height:4.28vh;width:2.42vw;z-index: 1"><span style="position: absolute; margin-top: 8px;">HELPLINE </span>
+            <br><br>
+            <p>Report A Crime: <br> 100</p>
+            <p>Women Helpline: <br> 1091</p>
+            <p>Child Helpline: <br> 1098</p>
+            <p>Anti Ragging: <br> 1800-180-5522</p>
+            <p>Ambulance: <br>108</p>
+            <p>Railway Protection: <br> 1322</p>
+
+
+
+        </div>
+         </div>
+
+
+        <div id="safety" style="position: absolute; margin-left: 32.22vw;border: 1px black solid; height:1vw;width:43.82vw; margin-top:1.95vw; background-color: white;font-size: 16px;padding: 6px;">
+            <span style="color: red;font-weight: bold;">Safety Tip : </span>
+            <marquee behavior="scroll" direction="left" style="position: absolute;top:0.4vw; margin-right: 12vh; right: inherit;" id="tip">Stopping the spread starts with you. Wear a mask. Clean your hands. Maintain safe distance. Get Vaccinated.</marquee>
+        </div>
+
+        <script>
+            var text = [
+                "To prevent the spread of COVID-19: Clean your hands often. Use soap and water, or an alcohol-based hand rub.",
+                "To prevent the spread of COVID-19: Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze. ",
+                "To prevent the spread of COVID-19: Maintain a safe distance from anyone who is coughing or sneezing. ",
+                "To prevent the spread of COVID-19: Wear a mask when physical distancing is not possible. ",
+                "To prevent the spread of COVID-19: If you have a fever, cough and difficulty breathing, seek medical attention. ",
+                "To prevent the spread of COVID-19: Don’t touch your eyes, nose or mouth. ",
+                "Stopping the spread starts with you. Wear a mask. Clean your hands. Maintain safe distance. Get Vaccinated."
+            ];
+            var counter = 0;
+            var elem = document.getElementById("tip");
+            var inst = setInterval(change, 86400000);
+
+            function change() {
+                elem.innerHTML = text[counter];
+                counter++;
+                if (counter >= text.length) {
+                    counter = 0;
+                    // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+                }
+            }
+
+        </script>
+
+
+        <div id="gallery" style="position: absolute; margin-left: 30.22vw;float: left; border: 1px black solid; height:22.73vw;width: 47.36vw; margin-top:6.95vw;border-radius: 12px;">
+            <img src="Images/gallery_image.PNG" style="height: 100%;width: 100%;border-radius: 12px;">
+
+
+
+
+        </div>
+        <a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf" target="_blank">
+            <img src="Images/telephone.png" style="width: inherit;height: 40px;padding-left: 0px;position: absolute; margin-left:  96.5vw;margin-top:100px;z-index: 1;border-radius: 25px; " />
+            <div id="covid-helpline" style=" padding-top: 3vw; position: absolute; margin-left:  96.5vw; border: 1px black solid;border-radius: 12px; height:17.3vw;width:1.68vw;margin-top:100px;background-color: rgb(0,51,153);color: white;padding-left: 10px;">
+
+                <span>
+                    C<br>O<br>V<br>I<br>D<br><br>H<br>E<br>L<br>P<br>L<br>I<br>N<br>E<br>
+                </span>
+
+            </div>
+
+        </a>
+   
+
+    <!-------- Footer Begins ------->
+    <div id="footer"></div>
+    <!-------- Footer Ends ------->
+
+</body>

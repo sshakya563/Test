@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS Begin-->
+<link rel="stylesheet" href="style/nav.css">
+    </style>
+    <script>
+function logout(){
+	localStorage.setItem("expired", "Session expired. Please login again.");
+	//preventBack();
+	document.getElementById("logout").submit();
+}
+</script>
+</head>
+
+
+<!-------------------------------- Header --------------------------------------->
+<header>
+    <div id="header" style="height: 11.94vh; background-color: rgb(249,249,249);text-align:center;top:50%;">
+
+        <div id="logo" style="position: absolute; margin-left: 1.95vw; height:9.28vh;width:10.42vw;margin-top: 1.33vh;margin-bottom: 1.33vh;background-color: inherit;">
+
+            <!-- Logo Image to be added -- --> 
+<img src="./Images/Logo.jpeg" style="height:4em;width: 5em;">  
+
+        </div>
+
+        <span style="position: absolute; color: rgb(237,28,36);font-weight:bold;font-size:4.23vw;left: 21.48vw;top:1.86vh;z-index: 1;">ONLINE CRIME MANAGEMENT</span>
+
+    </div>
+
+
+    <!-------------------------------- Navigation Bar --------------------------------------->
+    <div style="background-color: rgb(0,51,153);height:5.31vh; width: 100%;z-index: 1" id="nav">
+        <a href="../homepage.jsp" style="width: 12.5vw;">HOME</a>
+        <a href="newsfinal.jsp" style="width: 12.5vw;">NEWS</a>
+        <a href="mostwanted.jsp" style="width: 15.43vw;">MOST WANTED</a>
+        <a href="missingpersons.jsp" style="width: 15.43vw;">MISSING PERSONS</a>
+        <a href="unidentifiedbodies.jsp" style="width: 17.38vw;">UNIDENTIFIED BODIES</a>
+        <a class="active"  href="crimetypes.jsp" style="width: 12.83vw;">CRIME TYPES</a>
+        <form id="logout" action="LogOutController"></form>
+        <a onclick='return logout()' style="width: 12.83vw; cursor: pointer;">LOGOUT</a>
+
+
+
+    </div>
+    
+    
+
+</header>
+
+
+
+    
